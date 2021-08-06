@@ -27,8 +27,9 @@ public class CreacionEspectadores {
 			}
 		} catch (Exception e) { //Mensaje de error y se reinicia el programa si ingresa algo distinto a numero entero.
 			// TODO: handle exception
-			System.err.println("\n ----VALOR INCORRECTO.----\n ----VUELVA A INICIAR EL PROGRAMA E INGRESE NUMERO ENTERO.----");
-			System.exit(0);
+			System.err.println("\n ----VALOR INCORRECTO.----\n ----INGRESE NUMERO ENTERO.----");
+			crearEspectadores();
+//			System.exit(0);
 		}
 	}
 	//Getters y setters

@@ -2,8 +2,14 @@ package constructores.app;
 
 public class CreacionPelicula {
 	
-	public Pelicula peliculas []; //Array de objeto para almacenar la informacion de la pelicula
+	private Pelicula peliculas []; //Array de objeto para almacenar la informacion de la pelicula
 	
+	public Pelicula[] getPeliculas() {
+		return peliculas;
+	}
+	public void setPeliculas(Pelicula[] peliculas) {
+		this.peliculas = peliculas;
+	}
 	//Metodo para asignar la informacion de la pelicula en el array de objetos
 	public void crearPelicula() {
 			peliculas = new Pelicula[2]; 
