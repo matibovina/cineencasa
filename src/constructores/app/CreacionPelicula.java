@@ -12,7 +12,7 @@ public class CreacionPelicula {
 	}
 	//Metodo para asignar la informacion de la pelicula en el array de objetos
 	public void crearPelicula() {
-			peliculas = new Pelicula[2]; 
+			peliculas = new Pelicula[1]; 
 			Pelicula pelicula = new Pelicula(); //Nueva instancia de pelicula
 			pelicula.getTituloPelicula(); //asigna titulo
 			pelicula.getDuracionPelicula(); //asigna duracion

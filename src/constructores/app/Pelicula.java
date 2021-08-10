@@ -2,11 +2,6 @@ package constructores.app;
 
 public class Pelicula {
 	
-	private String tituloPelicula; //Titulo de la Pelicula
-	private int duracionPelicula; // Duracion de la Pelicula
-	private int edadMinima; // Edad Minima para ingresar.
-	private String directorPelicula; // Director de la pelicula
-	
 	//Arrays para generar Peliculas de forma aleatoria. 
 	// Los datos de la pelicula son totalmente aleatorios solo para jugar un poco mas.
 	private String [] peliculaRandom = new String [] {"Cadena perpetua", "El padrino", "El padrino: Parte II", "El caballero oscuro", "12 hombres sin piedad", 
@@ -18,12 +13,16 @@ public class Pelicula {
 	protected int [] duracionRandom = new int [] {90, 120, 140, 180, 210, 240};
 	protected int [] edadRandom = new int [] {0, 13, 16, 18};
 	
+	private String tituloPelicula = peliculaRandom[(int)(Math.random()*9)]; //Titulo de la Pelicula
+	private int duracionPelicula = duracionRandom[(int)(Math.random()*4)];; // Duracion de la Pelicula
+	private int edadMinima = edadRandom[(int)(Math.random()*4)]; // Edad Minima para ingresar.
+	private String directorPelicula = directorRandom[(int)(Math.random()*9)]; // Director de la pelicula
+	
+
+	
 	//Constructor
 	public Pelicula() {
-		setTituloPelicula(tituloPelicula);
-		setDuracionPelicula(duracionPelicula);
-		setEdadMinima(edadMinima);
-		setDirectorPelicula(directorPelicula);
+
 	}
 	
 	// Getters y setters
@@ -33,7 +32,7 @@ public class Pelicula {
 	
 	//numero random para elegir el titulo de la pelicula dentro del array.
 	public void setTituloPelicula(String tituloPelicula) {
-		this.tituloPelicula = peliculaRandom[(int)(Math.random()*9)];;
+		this.tituloPelicula = tituloPelicula;
 	}
 
 	public int getDuracionPelicula() {
@@ -43,7 +42,7 @@ public class Pelicula {
 
 	//numero random para elegir la duracion de la pelicula dentro del array.
 	public void setDuracionPelicula(int duracionPelicula) {
-		this.duracionPelicula = duracionRandom[(int)(Math.random()*4)];
+		this.duracionPelicula = duracionPelicula;
 	}
 
 	public int getEdadMinima() {
@@ -51,7 +50,7 @@ public class Pelicula {
 	}
 	//Numero random para elegir la edad minima de la pelicula
 	public void setEdadMinima(int edadMinima) {
-		this.edadMinima = edadRandom[(int)(Math.random()*4)];
+		this.edadMinima = edadMinima;
 	}
 
 	public String getDirectorPelicula() {
@@ -59,7 +58,7 @@ public class Pelicula {
 	}
 	//numero random para elegir el director de la pelicula dentro del array.
 	public void setDirectorPelicula(String directorPelicula) {
-		this.directorPelicula = directorRandom[(int)(Math.random()*9)];
+		this.directorPelicula = directorPelicula;
 	}
 
 }

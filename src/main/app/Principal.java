@@ -7,6 +7,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		System.out.println("BIENVENIDO AL CINE!");
 	//Creacion instancia de Pelicula
+
 		CreacionPelicula nuevaPelicula = new CreacionPelicula();
 		nuevaPelicula.crearPelicula();
 	//Creacion instancia de Cine
@@ -30,12 +31,17 @@ public class Principal {
 		creacionEspectadores.imprimirEspectadores();
 		}
 	}
-
 /*
  	-----READ ME----
- 	
 	- Se creo cada clase solicitada: Espectador, Pelicula, Cine y Sala y se les asignaron los atributos solicitados.
 	- Aparte se crearon las clases CreacionPelicula, CreacionEspectadores y SentarEspectadores.
 	- En esas clases se encuentran los metodos para generar cada objeto, validaciones y sentar a los espectadores.
-	- No me quedaba tan claro que se debia imprimir y que no asi que imprimi por consola la informacion que me parecio pertinente.
+	- No me quedaba tan claro que se debia imprimir y que no asi que imprimi por consola la informacion que me parecio pertinente:
+	   - Informacion de la pelicila y precio de entrada,
+	   - Consulta la cantidad de espectadores para que el usuario ingrese por consola.
+	   - Imprime la sala con sus asientos vacios.
+	   - Imprime quienes son los espectadores y a que asiento fueron asignados.
+	   - imprime la sala con sus asientos ocupados, encaso de estar libre inprime "-".
+	   - imprime la lista de todos los espectadores que fueron creados y sus caracteristicas (nombre, edad, dinero);
+	- El programa permite crear infinidad de espectadores, aunque se limitara a sentar solo los primeros 72 que cumplan los requisitos.
 */

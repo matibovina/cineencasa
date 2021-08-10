@@ -8,7 +8,7 @@ public class SentarEspectadores {
 	private String[][] sala = new String[8][9]; //matriz de String para generar sala inicial
 	private String salaOcupada[][] = new String[8][9]; //matriz de String para asignar espectadores asientos.
 	//Array de String para guardar solo Espectadores que cumplan la condicion de Edad y Dinero.
-	private String espectIngresa[] = new String[salaOcupada.length*salaOcupada[0].length]; 
+	private String espectIngresa[] = new String[salaOcupada.length*salaOcupada[0].length]; //length the array es x * y de matriz sala;
 	
 	//Metodo para crear la distribucion de los asientos de la sala usando como parametro la instancia de la Clase Sala
 	public void crearSala(Sala sala1) {	
