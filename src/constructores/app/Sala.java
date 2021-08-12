@@ -1,14 +1,15 @@
 package constructores.app;
 
 public class Sala {
-	
-	private String asientos; //Atributo donde se guardara el nombre del asiento
 
-	//Constructor
+	private String asientos; // Atributo donde se guardara el nombre del asiento
+
+	// Constructor
 	public Sala() {
 		// TODO Auto-generated constructor stub
 	}
-	//getters y setters
+
+	// getters y setters
 	public String getAsientos() {
 		return asientos;
 	}
@@ -17,4 +18,3 @@ public class Sala {
 		this.asientos = asientos;
 	}
 }
-
